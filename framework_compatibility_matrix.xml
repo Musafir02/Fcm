@@ -82,7 +82,7 @@
        <name>android.hardware.usb</name>
         <version>1.0-3</version>
         <interface>
-           <name> IUsb</name>
+           <name>IUsb</name>
            <instance>default</instance>
         </interface>
     </hal>
