@@ -1,20 +1,4 @@
 <compatibility-matrix>
-    <hal format="hidl" optional="true">
-       <name>android.hardware.audio.effect</name>
-        <version>7.0</version>
-        <interface>
-           <name>IEffectsFactory</name>
-           <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-       <name>android.hardware.audio</name>
-        <version>7.0</version>
-        <interface>
-           <name>IDevicesFactory</name>
-           <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="aidl" optional="true">
        <name>android.hardware.biometrics.fingerprint</name>
         <interface>
@@ -30,40 +14,44 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-       <name>android.hardware.cas</name>
-        <version>1.0-2</version>
-        <interface>
-           <name>IMediaCasService</name>
-           <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-       <name>android.hardware.drm</name>
-        <interface>
-           <name>IDrmFactory</name>
-           <instance>clearkey</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-       <name>android.hardware.gatekeeper</name>
+       <name>android.hardware.bluetooth</name>
         <version>1.0</version>
         <interface>
-           <name>IGatekeeper</name>
+           <name>IBluetoothHci</name>
            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-       <name>android.hardware.keymaster</name>
-        <version>4.0-1</version>
+       <name>android.hardware.camera.provider</name>
+        <version>2.0-4</version>
         <interface>
-           <name>IKeymasterDevice</name>
+           <name>ICameraProvider</name>
+           <instance>legacy/0</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+       <name>android.hardware.drm</name>
+        <version>1.0-3</version>
+        <interface>
+           <name>ICryptoFactory</name>
+           <instance>widevine</instance>
+        </interface>
+        <interface>
+           <name>IDrmFactory</name>
+           <instance>widevine</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+       <name>android.hardware.health</name>
+        <interface>
+           <name>IHealth</name>
            <instance>default</instance>
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-       <name>android.hardware.memtrack</name>
+       <name>android.hardware.ir</name>
         <interface>
-           <name>IMemtrack</name>
+           <name>IConsumerIr</name>
            <instance>default</instance>
         </interface>
     </hal>
@@ -71,61 +59,6 @@
        <name>android.hardware.power</name>
         <interface>
            <name>IPower</name>
-           <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-       <name>android.hardware.radio</name>
-        <version>1.0-5</version>
-        <interface>
-           <name>IRadio</name>
-           <instance>slot1</instance>
-           <instance>slot2</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-       <name>android.hardware.sensors</name>
-        <version>1.0</version>
-        <interface>
-           <name>ISensors</name>
-           <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-       <name>android.hardware.tetheroffload.config</name>
-        <version>1.0</version>
-        <interface>
-           <name>IOffloadConfig</name>
-           <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-       <name>android.hardware.tetheroffload.control</name>
-        <version>1.0-1</version>
-        <interface>
-           <name>IOffloadControl</name>
-           <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-       <name>android.hardware.thermal</name>
-        <interface>
-           <name>IThermal</name>
-           <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-       <name>android.hardware.usb.gadget</name>
-        <interface>
-           <name>IUsbGadget</name>
-           <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-       <name>android.hardware.usb</name>
-        <version>1.0-3</version>
-        <interface>
-           <name>IUsb</name>
            <instance>default</instance>
         </interface>
     </hal>
@@ -154,14 +87,6 @@
        <name>android.hardware.wifi.supplicant</name>
         <interface>
            <name>ISupplicant</name>
-           <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-       <name>vendor.dolby_v3_6.hardware.dms360</name>
-        <version>2.0</version>
-        <interface>
-           <name>IDms</name>
            <instance>default</instance>
         </interface>
     </hal>
