@@ -29,6 +29,14 @@
            <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+       <name>android.hardware.cas</name>
+        <version>1.0-2</version>
+        <interface>
+           <name>IMediaCasService</name>
+           <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="aidl" optional="true">
        <name>android.hardware.drm</name>
         <interface>
@@ -36,17 +44,19 @@
            <instance>clearkey</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
-       <name>android.hardware.health</name>
+    <hal format="hidl" optional="true">
+       <name>android.hardware.gatekeeper</name>
+        <version>1.0</version>
         <interface>
-           <name>IHealth</name>
+           <name>IGatekeeper</name>
            <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
-       <name>android.hardware.ir</name>
+    <hal format="hidl" optional="true">
+       <name>android.hardware.keymaster</name>
+        <version>4.0-1</version>
         <interface>
-           <name>IConsumerIr</name>
+           <name>IKeymasterDevice</name>
            <instance>default</instance>
         </interface>
     </hal>
@@ -61,6 +71,39 @@
        <name>android.hardware.power</name>
         <interface>
            <name>IPower</name>
+           <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+       <name>android.hardware.radio</name>
+        <version>1.0-5</version>
+        <interface>
+           <name>IRadio</name>
+           <instance>slot1</instance>
+           <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+       <name>android.hardware.sensors</name>
+        <version>1.0</version>
+        <interface>
+           <name>ISensors</name>
+           <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+       <name>android.hardware.tetheroffload.config</name>
+        <version>1.0</version>
+        <interface>
+           <name>IOffloadConfig</name>
+           <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+       <name>android.hardware.tetheroffload.control</name>
+        <version>1.0-1</version>
+        <interface>
+           <name>IOffloadControl</name>
            <instance>default</instance>
         </interface>
     </hal>
